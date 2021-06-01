@@ -1,0 +1,16 @@
+.photo-grid__text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    grid-area: text;
+    line-height: 29px;
+    margin: 0 21px;
+    /* max-width: 75%; */
+    overflow: hidden;
+    padding: 25px 0;
+    text-overflow: ellipsis;
+    max-width: 150px;
+    max-height: 29px;
+    /* display: inline-block; */
+    white-space: nowrap;
+}

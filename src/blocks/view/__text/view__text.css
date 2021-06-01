@@ -1,0 +1,10 @@
+.view__text {
+    height: 12px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    justify-self: left;
+}

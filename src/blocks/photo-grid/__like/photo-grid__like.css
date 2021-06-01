@@ -1,0 +1,28 @@
+.photo-grid__like {
+    grid-area: like;
+    margin: 20px 20px 0 0;
+    background-image: url("../../../images/like (1).svg");
+    background-size: cover;
+    background-position: center;
+    max-height: 20px;
+    align-self: center;
+    justify-self: right;
+    cursor: pointer;
+    width: 22px;
+    height: 19px;
+    transition: 0.3s;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+}
+
+.photo-grid__like:hover {
+    opacity: 0.5;
+}
+
+.photo-grid__like:active {
+    background-image: url("../../../images/Like-active.svg");
+}

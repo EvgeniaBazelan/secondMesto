@@ -1,0 +1,13 @@
+.profile {
+    display: grid;
+    grid-template-areas: "avatar info edit add " "avatar info edit add";
+    margin: 42px auto 40px auto;
+    gap: 18px;
+}
+
+@media all and (max-width:900px) {
+    .profile {
+        grid-template-areas: "avatar avatar" "info edit" "add add";
+        max-width: 282px;
+    }
+}

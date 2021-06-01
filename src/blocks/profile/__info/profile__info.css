@@ -1,0 +1,17 @@
+.profile__info {
+    grid-area: info;
+    max-width: 336px;
+    display: flex;
+    flex-direction: column;
+    min-width: 189px;
+    margin: 21px 0 25px -60px;
+    justify-content: left;
+    align-items: inherit;
+}
+
+@media all and (max-width:900px) {
+    .profile__info {
+        justify-self: right;
+        margin: 21px 0 25px;
+    }
+}

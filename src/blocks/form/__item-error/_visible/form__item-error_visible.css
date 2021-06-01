@@ -1,0 +1,12 @@
+.form__item-error_visible {
+    visibility: visible;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* border-top: 1px solid #FF0000; */
+    color: #FF0000;
+    display: inline-block;
+    margin: -40px 36px 5px;
+}

@@ -1,0 +1,9 @@
+.photo-grid__item {
+    display: grid;
+    grid-template-areas: "image image" "text like" "text counter";
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    max-height: 362px;
+    max-width: 282px;
+}

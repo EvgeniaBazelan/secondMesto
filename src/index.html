@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <title>Место</title>
+</head>
+
+<body class="page">
+
+    <header class="header">
+        <img class="header__logo" alt="логотип место" src="<%=require('./images/logo-header.svg')%>">
+
+    </header>
+    <main class="content">
+        <section class="profile">
+            <div class="profile__avatar">
+                <div class="profile__cover"></div>
+            </div>
+            <div class="profile__info">
+                <h1 class="profile__name">Жак-Ив-Кусто</h1>
+                <p class="profile__profession">Исследователь океана</p>
+            </div>
+            <button type="button" class="profile__edit-button"></button>
+            <button type="button" class="profile__add-button"></button>
+
+        </section>
+        <section class="photo-grid">
+
+        </section>
+
+
+    </main>
+    <div class="popup popup_edit-profile">
+        <form class="form" name="form" novalidate>
+            <button type="button" class="popup__close"> </button>
+            <h2 class="form__text">Редактировать профиль</h2>
+            <fieldset class="form__personal-info">
+                <input class="form__item " id='name' placeholder="Name" name="name" type="text" required minlength="2" maxlength="40">
+                <span class="form__item-error name-error "></span>
+                <input class="form__item " id='profession' placeholder="Profession" name="profession" type="text" required minlength="2" maxlength="200">
+                <span class="form__item-error profession-error"></span>
+                <!-- Элементы формы для получения данных о пользователе -->
+            </fieldset>
+            <button class="form__button" type="submit">Сохранить</button>
+
+        </form>
+    </div>
+    <div class="popup popup_add-place">
+        <form class="form" name="add-cards" novalidate>
+            <button type="button" class="popup__close" name="close"> </button>
+            <h2 class="form__text">Новое место</h2>
+            <fieldset class="form__personal-info">
+                <input class="form__item " id='title' placeholder="Название" name="title" type="text" required minlength="2" maxlength="30">
+                <span class="form__item-error title-error"></span>
+                <input class="form__item " id='link' placeholder="Ссылка на картинку" name="link" type="url" required>
+                <span class="form__item-error link-error"></span>
+                <!-- Элементы формы для получения данных о пользователе -->
+            </fieldset>
+            <button class="form__button" type="submit">Создать</button>
+
+        </form>
+    </div>
+    <div class="popup popup_view">
+        <div class="view">
+            <button type="button" class="popup__close" name="close_view"> </button>
+            <img class="view__photo" alt="церковь в горах" src="./images/karachaevsk.jpg">
+            <p class="view__text">Карачаевск </p>
+        </div>
+    </div>
+    <div class="popup popup_confirm">
+        <form class="form" name="confirm" novalidate>
+            <button type="button" class="popup__close" name="close"> </button>
+            <h2 class="form__text">Вы уверенны?</h2>
+
+            <button class="form__button" type="submit">Да</button>
+
+        </form>
+    </div>
+    <div class="popup popup_update">
+        <form class="form" name="update" novalidate>
+            <button type="button" class="popup__close" name="close"> </button>
+            <h2 class="form__text">Обновить аватар</h2>
+            <fieldset class="form__personal-info">
+
+                <input class="form__item " id='linkAvatatar' placeholder="Ссылка на аватар" name="link" type="url" required>
+                <span class="form__item-error linkAvatatar-error"></span>
+                <!-- Элементы формы для получения данных о пользователе -->
+            </fieldset>
+            <button class="form__button" type="submit">Сохранить</button>
+
+        </form>
+    </div>
+    <footer class="footer">
+
+        <p class="footer__copyright"> &copy; 2020 Mesto Russia</p>
+
+    </footer>
+
+    <template class="photo-grid-template">
+      <div class="photo-grid__item">
+
+        <button type="button" class="photo-grid__item_delete"> </button>
+        <img class="photo-grid__view" alt="#" src="#">
+        <p class="photo-grid__text"></p>
+        <button type="button" class="photo-grid__like">
+
+        </button>
+        <p class="photo-grid__counter">0</p>
+    </div>
+    </template>
+
+    <script type="module" src="./index.js"></script>
+
+
+
+</body>
+
+</html>
